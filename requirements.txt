@@ -1,0 +1,11 @@
+gradio
+torch
+transformers
+pyttsx3
+torchaudio
+pandas
+numpy
+playsound
+threading
+tkinter
+sounddevice

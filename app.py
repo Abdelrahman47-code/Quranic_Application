@@ -1,19 +1,18 @@
-import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
-from tkinter import font as tkFont
-import sounddevice as sd
-from transformers import WhisperProcessor, WhisperForConditionalGeneration
-from difflib import SequenceMatcher
-import json
-import pyttsx3
-import os
-from playsound import playsound
-import torchaudio
-import torch
-import numpy as np
-import pandas as pd
-import threading
-
+import tkinter as tk  # For creating the GUI application.
+from tkinter import filedialog, messagebox, ttk  # For file dialog, message boxes, and advanced GUI widgets.
+from tkinter import font as tkFont  # For managing and using custom fonts in the GUI.
+import sounddevice as sd  # For recording and handling audio playback.
+from transformers import WhisperProcessor, WhisperForConditionalGeneration  # Hugging Face models for audio transcription.
+from difflib import SequenceMatcher  # For comparing strings and calculating similarity ratios.
+import json  # For handling JSON files (e.g., Quran Surah data).
+import pyttsx3  # For text-to-speech functionality.
+import os  # For interacting with the operating system (e.g., file paths).
+from playsound import playsound  # For playing audio files.
+import torchaudio  # For loading and processing audio files.
+import torch  # PyTorch library for deep learning.
+import numpy as np  # For numerical operations.
+import pandas as pd  # For handling structured data (e.g., dataframes for predictions).
+import threading  # For managing concurrent execution (e.g., audio playback without freezing the GUI).
 
 # Initialize the model and processor
 processor = WhisperProcessor.from_pretrained("tarteel-ai/whisper-tiny-ar-quran")
@@ -153,8 +152,6 @@ def load_all_surahs():
 
 quran_text_arabic = load_all_surahs()
 
-
-
 # Load saved model for reciter classification
 class ReciterCNN(torch.nn.Module):
     def __init__(self, num_classes):
@@ -195,7 +192,7 @@ reciter_model.load_state_dict(torch.load("Quran_Reciters_Classification/model.pt
 reciter_model.eval()
 
 
-
+# Main application class
 class App:
     def __init__(self, root):
         self.root = root
@@ -279,7 +276,8 @@ class App:
         self.start_button = self.create_button(ayah_frame, "🎙 Start Recording", self.start_recording)
         self.stop_button = self.create_button(ayah_frame, "🛑 Stop Recording", self.stop_recording, state=tk.DISABLED)
         self.transcription_label = self.add_label(ayah_frame, "", self.label_font)
-        self.ayah_label = self.add_label(ayah_frame, "", self.label_font)
+        self.ayah_label = self.add_label(ayah_frame, "", self.label_font)    
+        ayah_frame.pack(fill="both", expand=True)
 
         return ayah_frame
 
@@ -312,7 +310,6 @@ class App:
     def add_title(self, parent, text):
         """Add a title label to the parent."""
         tk.Label(parent, text=text, font=self.title_font).pack(pady=20)
-
 
 
     # ----- Verses Identifier -----
@@ -495,8 +492,6 @@ class App:
 
         self.browse_label.config(text="Browse a new file")
         self.browse_label.update_idletasks()
-
-
 
 # Initialize the Tkinter window
 if __name__ == "__main__":
