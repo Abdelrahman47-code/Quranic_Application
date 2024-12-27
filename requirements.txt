@@ -9,3 +9,6 @@ playsound
 threading
 tkinter
 sounddevice
+arabic-reshaper
+ffmpeg-python
+pydub
