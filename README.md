@@ -31,11 +31,11 @@ This project is a Python-based application that identifies Quranic verses from a
 
 ## 💻 GUI Screenshots
 
-![Image](Screenshots.1jpg)
+![Image](Screenshots/1.jpg)
 
-![Image](Screenshots.2jpg)
+![Image](Screenshots/2.jpg)
 
-![Image](Screenshots.3jpg)
+![Image](Screenshots/3.jpg)
 
 ---
 
