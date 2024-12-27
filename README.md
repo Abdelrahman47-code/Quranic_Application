@@ -1,6 +1,6 @@
-# 🔊 Quranic Verses Identification & Reciter Classification 🎤
+# 🔊 Quranic Verses Identifier & Reciter Classifier 🎤
 
-Welcome to the `Quranic Verses Identifier & Reciter Classifier` Tool!
+Welcome to the `Quranic Verses Identification & Reciter Classification` Tool!
 
 ![image](https://c0.wallpaperflare.com/preview/935/577/300/quran-faith-islamic-muslim.jpg)
 
