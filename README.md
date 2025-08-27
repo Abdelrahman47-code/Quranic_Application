@@ -112,14 +112,4 @@ The `Some_Stats_of_the_Holy_Quran.ipynb` notebook aims to analyze the Quranic te
 
 ---
 
-## 👨‍💻 Team Members
-- Abdelrahman Eldaba - [Linkedin](https://www.linkedin.com/in/abdelrahmaneldaba)
-- Abdulhamed Samy - [Linkedin](https://www.linkedin.com/in/abdelhamed-eid)
-- Abdallah Khaled - [Linkedin](https://www.linkedin.com/in/abdullahkhaled1)
-- Ali Adel - [Linkedin](https://www.linkedin.com/in/ali-hashhash-779602259)
-- Fares Mamdouh - [Linkedin](http://linkedin.com/in/faresmamdouh)
-- Mahmoud Ashour - [Linkedin](https://www.linkedin.com/in/mahmoud-s-ashour-b416b0275)
-
----
-
 #### 🤲 Alhumdallah for completing this project. Feel free to explore, provide feedback, and connect with us for discussions and collaborations! 🤝
